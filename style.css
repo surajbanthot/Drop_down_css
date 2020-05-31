@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  color: rgb(39, 27, 27);
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  color: rgb(24, 18, 18);
+  text-decoration: none;
+}
+
+/* Hide nested ul by default */
+
+#navbar ul li ul {
+  display: none;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: coral;
+  color: #ffff;
+}
+
+#navbar ul li:hover a {
+  color: #fff;
+}
+
+/* Nester dropdown show */
+
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #3333;
+}
+
+#navber ul li:hover ul li:hover {
+  background: #e0e0e0;
+  color: inherit;
+}
